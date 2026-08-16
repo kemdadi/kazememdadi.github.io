@@ -1,161 +1,205 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Home</title>
 
-<meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #222;
+      background: #ffffff;
+    }
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    header {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 18px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-<title>Kazem Emdadi | Personal Website</title>
+    .site-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
 
- 
-<style>
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
 
-body {
+    nav a:hover {
+      color: #007acc;
+    }
 
-margin: 0;
+    .page {
+      max-width: 1100px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 50px;
+      padding: 0 30px;
+    }
 
-font-family: Arial, sans-serif;
+    .sidebar {
+      text-align: center;
+    }
 
-background: linear-gradient(135deg, #eef2f7, #dbe4f0);
-color: #1f2937;
+    .profile-photo {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ddd;
+      display: block;
+      margin: 0 auto 25px;
+    }
 
-}
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
 
- 
+    .short-info {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 20px;
+    }
 
-.container {
+    .links a {
+      display: block;
+      color: #007acc;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 15px;
+    }
 
-max-width: 850px;
+    .links a:hover {
+      text-decoration: underline;
+    }
 
-margin: 80px auto;
+    .content h1 {
+      font-size: 34px;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 12px;
+      margin-top: 0;
+    }
 
-background: #ffffff;
+    .content p {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+    }
 
-padding: 50px;
+    .section-title {
+      font-size: 24px;
+      margin-top: 35px;
+      color: #333;
+    }
 
-border-radius: 18px;
+    footer {
+      border-top: 1px solid #e5e5e5;
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+      margin-top: 60px;
+    }
 
-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    @media (max-width: 800px) {
+      header {
+        padding: 18px 25px;
+        display: block;
+        text-align: center;
+      }
 
-}
+      nav {
+        margin-top: 15px;
+      }
 
- 
+      nav a {
+        margin: 0 10px;
+      }
 
-h1 {
-
-text-align: center;
-
-font-size: 36px;
-
-margin-bottom: 10px;
-
-color: #111827;
-
-}
-
- 
-
-.subtitle {
-
-text-align: center;
-
-font-size: 18px;
-
-color: #6b7280;
-
-margin-bottom: 40px;
-
-}
- 
-
-p {
-
-font-size: 18px;
-line-height: 1.8;
-
-text-align: left;
-
-}
-
- 
-
-.footer {
-
-margin-top: 40px;
-
-text-align: center;
-
-color: #6b7280;
-
-font-size: 14px;
-
-}
-
-</style>
-
+      .page {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
- 
 
 <body>
 
-<div class="container">
+  <header>
+    <div class="site-title">About Me</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">CV</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<h1>Kazem Emdadi</h1>
+  <main class="page">
 
- 
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Kazem Emdadi" class="profile-photo">
 
-<div class="subtitle">
-Personal Portfolio and Professional Profile
+      <div class="name">Kazem Emdadi</div>
 
-</div>
+      <div class="short-info">
+        Engineering and Technology Enthusiast<br>
+        Dresden, Germany
+      </div>
 
- 
+      <div class="links">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+    </aside>
 
-<p>
-Welcome to my personal website. My name is Kazem Emdadi.
+    <section class="content">
+      <h1>About Me</h1>
 
-This page is created to present a short introduction about myself,
+      <p>
+        My name is Kazem Emdadi. This personal website is created to present
+        a brief overview of my background, professional interests, and future goals.
+      </p>
 
-my professional background, my interests, and my future goals.
+      <p>
+        I am interested in engineering, technology, innovation, and continuous learning.
+        I believe that technical knowledge, practical experience, and personal development
+        are essential parts of building a strong and successful professional career.
+      </p>
 
-</p>
+      <p>
+        This page will be updated over time with more information about my work,
+        projects, skills, professional experience, and contact details.
+      </p>
 
- 
+      <h2 class="section-title">Interests</h2>
 
-<p>
+      <p>
+        My main interests include engineering, research, technology development,
+        problem solving, and learning modern tools that can improve technical and
+        professional performance.
+      </p>
+    </section>
 
-I am interested in engineering, technology, innovation, and continuous learning.
+  </main>
 
-I believe that personal development, technical knowledge, and professional experience
-
-are important parts of building a successful career.
-
-</p>
-
- 
-
-<p>
-
-This website will be updated over time with more information about my work,
-
-projects, skills, and contact details.
-
-</p>
-
- 
-
-<div class="footer">
-
-© 2026 Kazem Emdadi
-
-</div>
-
-</div>
+  <footer>
+    © 2026 Kazem Emdadi
+  </footer>
 
 </body>
-
 </html>
